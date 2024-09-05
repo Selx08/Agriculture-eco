@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/manifest.json">
+    <title>Create Account - Kisan Network</title>
+    <meta name="title" content="Create Account - Kisan Network">
+    <meta name="description" content="Register for a Kisan Network account to access our services and features. Fill in the form to create a new account and start your journey with us.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kisannetwork.com/register.html">
+    <meta property="og:title" content="Create Account - Kisan Network">
+    <meta property="og:description" content="Register for a Kisan Network account to access our services and features. Fill in the form to create a new account and start your journey with us.">
+    <meta property="og:image" content="https://kisannetwork.com/banner-img-image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kisannetwork.com/register.html">
+    <meta property="twitter:title" content="Create Account - Kisan Network">
+    <meta property="twitter:description" content="Register for a Kisan Network account to access our services and features. Fill in the form to create a new account and start your journey with us.">
+    <meta property="twitter:image" content="https://kisannetwork.com/banner-img-image.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            box-shadow: none;
+            padding: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #fff;
+            border-top: 1px solid #e7e7e7;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header id="kn-header" class="scroll-before clearfix">
+        <div class="col-md-3 col-sm-12">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="logo.png" alt="Kisan Network Logo">
+                </a>
+            </div>
+            <button class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <nav class="link-container hid">
+                <ul class="main-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/farmer.html">Farmer</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a class="active" href="/login.html">Login</a></li>
+                </ul>
+            </nav>
+          <!--  <div class="language-container">
+                <label for="language-select">Choose Language:</label>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ur">Urdu</option>
+                    <option value="ben">Bengali</option>
+                    <option value="mara">Marathi</option>
+                    <option value="assa">Assamese</option>
+                    <option value="tam">Tamil</option>
+                </select>
+            </div> -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Create an Account</h2>
+            <form action="/submit_registration" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">Username:</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password" class="col-sm-2 control-label">Confirm Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </div>
+                </div>
+            </form>
+            <div class="login-link">
+                <p>Already have an account? <a href="/login.html" class="btn btn-link">Login</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>©️ 2024 Kisan Network. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,366 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+#kn-header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-scroll {
+    background-color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#kn-header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#kn-header .logo-container img {
+    max-width: 150px;
+}
+
+#kn-header .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+#kn-header .link-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#kn-header .main-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#kn-header .main-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#kn-header .main-list li a:hover,
+#kn-header .main-list li a.active {
+    color: #00a651;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    background-image: url('New\ laws\ on\ agri\ trade\ &\ contract\ farming\ in\ the\ works.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-text-highlight {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.hero-section h3{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-btn {
+    padding: 2px 15px;
+    background-color: #00a651;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.heading-container p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hero-section .hero-btn:hover {
+    background-color: #007b3e;
+}
+
+/* Number Section */
+.homepage-numbers {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.number-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.number-wrapper .number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00a651;
+}
+
+.number-wrapper .text-md {
+    font-size: 1rem;
+    color: #666;
+}
+
+.language-container {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.language-container label {
+    margin-right: 8px;
+}
+
+.language-container select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Feature Section */
+.features {
+    padding: 20px;
+    font-weight: 600;
+}
+
+.feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #e0f7e0; /* Light green background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container img {
+    max-width: 80px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.feature-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color:  #028541; /* Light green color */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #4d5cfae2; /* Slightly darker green on hover */
+}
+
+
+
+/* Ensure the footer does not overflow content */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    clear: both; /* Ensure it clears previous content */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.company-info h2 {
+    color: #E67E22;
+    margin-bottom: 15px;
+}
+
+.quick-links h3,
+.contact-info h3,
+.social-media h3 {
+    margin-bottom: 15px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons i {
+    width: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #E67E22;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #7F8C8D;
+    padding-top: 20px;
+}
+
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #BDC3C7;
+}
+
+.footer-bottom a {
+    color: #E67E22;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #kn-header .link-container {
+        display: none;
+    }
+
+    #kn-header .menu-btn {
+        display: block;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .feature-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .number-wrapper .number {
+        font-size: 2rem;
+    }
+}

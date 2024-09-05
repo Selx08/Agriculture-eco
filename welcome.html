@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Kisan Network - Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .welcome {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .welcome video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.6; /* Adjust the opacity if needed */
+        }
+        .welcome-content {
+            position: relative;
+            z-index: 2;
+        }
+        .cssbuttons-io-button {
+            background: #1a8f64;
+            color: white;
+            font-family: inherit;
+            padding: 0.35em;
+            padding-left: 1.2em;
+            font-size: 17px;
+            font-weight: 500;
+            border-radius: 0.9em;
+            border: none;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            box-shadow: inset 0 0 1.6em -0.6em #714da6;
+            overflow: hidden;
+            position: relative;
+            height: 2.8em;
+            padding-right: 3.3em;
+            cursor: pointer;
+        }
+        .cssbuttons-io-button .icon {
+            background: #def9C4;
+            margin-left: 1em;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.2em;
+            width: 2.2em;
+            border-radius: 0.7em;
+            box-shadow: 0.1em 0.1em 0.6em 0.2em #00ffb7;
+            right: 0.3em;
+            transition: all 0.3s;
+        }
+        .cssbuttons-io-button:hover .icon {
+            width: calc(100% - 0.6em);
+        }
+        .cssbuttons-io-button .icon svg {
+            width: 1.1em;
+            transition: transform 0.3s;
+            color: #000000;
+        }
+        .cssbuttons-io-button:hover .icon svg {
+            transform: translateX(0.1em);
+        }
+        .cssbuttons-io-button:active .icon {
+            transform: scale(0.95);
+        }
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="welcome" id="welcome-section">
+        <video src="\welcome_vdo.mp4" autoplay muted loop></video>
+        <div class="welcome-content">
+            <h1>Welcome to...</h1>
+            <h1 class="welcome-app-name" style="font-size:400%;font-weight: bold;">Krishi Setu</h1>
+            <p style="margin-top: 20px;margin-bottom: 20px;">Sow seeds of prosperity and harvest dreams, We Grow together and thrive together.</p>
+            <div class="button-container">
+                <button class="cssbuttons-io-button" onclick="redirectToHome()">
+                    Get started ...
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loader -->
+    <div id="loader">Loading...</div>
+
+    <script>
+        function redirectToHome() {
+            // Show the loader
+            document.getElementById('loader').style.display = 'flex';
+            
+            // Redirect after 1.5 seconds
+            setTimeout(function () {
+                window.location.href = 'index.html'; // Redirect to the main content
+            }, 1500); // 1500 milliseconds = 1.5 seconds
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/manifest.json">
+    <title>Contact Us - Kisan Network</title>
+    <meta name="title" content="Contact Us - Kisan Network">
+    <meta name="description" content="Get in touch with Kisan Network. Whether you have questions, need support, or want to connect with us, use our contact form to reach out. We're here to help!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kisannetwork.com/contact.html">
+    <meta property="og:title" content="Contact Us - Kisan Network">
+    <meta property="og:description" content="Get in touch with Kisan Network. Whether you have questions, need support, or want to connect with us, use our contact form to reach out. We're here to help!">
+    <meta property="og:image" content="https://kisannetwork.com/banner-img-image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kisannetwork.com/contact.html">
+    <meta property="twitter:title" content="Contact Us - Kisan Network">
+    <meta property="twitter:description" content="Get in touch with Kisan Network. Whether you have questions, need support, or want to connect with us, use our contact form to reach out. We're here to help!">
+    <meta property="twitter:image" content="https://kisannetwork.com/banner-img-image.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/843d9fdb9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root">
+        <!-- Header Section -->
+        <header id="kn-header" class="scroll-before clearfix">
+            <div class="col-md-3 col-sm-12">
+                <div class="logo-container">
+                    <a href="/">
+                        <img src="logo.png" alt="Kisan Network Logo">
+                    </a>
+                </div>
+                <button class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <nav class="link-container hid">
+                    <ul class="main-list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/farmer.html">Farmer</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a class="active" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="language-container">
+                    <label for="language-select">Choose Language:</label>
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ur">Urdu</option>
+                        <option value="ben">Bengali</option>
+                        <option value="mara">Marathi</option>
+                        <option value="assa">Assamese</option>
+                        <option value="tam">Tamil</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="col-md-12 clearfix">
+            <div class="row clearfix">
+                <div class="container clearfix">
+                    <!-- Contact Us Section -->
+                    <section class="homepage">
+                        <div class="col-md-12 border-container clearfix">
+                            <div class="hero-section full-width">
+                                <div class="hero-text-highlight">
+                                    <h3>Contact Us</h3>
+                                    <div class="hero-content-box">
+                                        <h1>We're Here to Help</h1>
+                                    </div>
+                                </div>
+                                <div class="curve">
+                                    <div class="heading-container">
+                                        <h1>Get in Touch with Kisan Network</h1>
+                                        <p class="text-lg hide-on-mobile">
+                                            Whether you have questions, need support, or want to connect with us, use the contact form below to reach out.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="col-md-12 border-container clearfix">
+                            <div class="contact-form full-width">
+                                <h2 class="features-heading">Send Us a Message</h2>
+                                <form action="/submit_contact_form" method="post" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="name" class="col-sm-2 control-label">Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="name" name="name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">Email:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                 <!--   <div class="form-group">
+                                        <label for="subject" class="col-sm-2 control-label">Subject:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="subject" name="subject" class="form-control" required>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label for="message" class="col-sm-2 control-label">Message:</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-primary">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Company Info & Mission -->
+                <div class="footer-section company-info">
+                    <h2>Kisan Network</h2>
+                    <p>Empowering farmers by connecting them directly with markets, ensuring fair prices and sustainable growth. Join us in transforming agriculture.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/market-access.html">Features</a></li>
+                        <li><a href="/farmer.html">Farmers</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                        <li><a class="active" href="/contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                     <p><strong>Email:</strong> info@farmconnect.com</p>
+                    <p><strong>Phone:</strong> +91 9876543210</p>
+                    <p><strong>Address:</strong> 123 UP, India</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©️ 2024 Kisan Network. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </footer>
+   
